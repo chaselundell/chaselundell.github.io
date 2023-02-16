@@ -1,0 +1,88 @@
+.hero {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #191919;
+}
+
+.me-snippets {
+    display:grid;
+    color: #2D4263;
+    width: 100vw;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.my-name {
+  font-size: 3 rem;
+  grid-column: 1 / 2;
+  justify-content: right;
+  display: grid;
+  margin-right: 7vw;
+}
+
+.message {
+  grid-column: 2 / 2;
+  color: #ECDBBA;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 1.5rem;
+  top: 0.2rem;
+  /* animation: openclose 8s ease-in-out infinite; */
+}
+
+.word {
+  font-family: tahoma;
+}
+@media only screen and (max-width: 1025px){
+    .me-snippets {
+        font-size: 1rem;
+        gap: 0;
+    }
+ }
+
+ .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  #caret {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
