@@ -26,12 +26,12 @@ h2 {
 }
 
 .skill {
-    background-color: rgba(25, 25, 25, .6);
+    background-color: rgba(25, 25, 25, 0);
     border-radius: 10px 10px 10px 10px;
     overflow: hidden;
     height: 35vh;
-    -webkit-box-shadow: 0px 12px 18px -6px #191919;
-    box-shadow:0px 12px 18px -6px #191919;
+    /* -webkit-box-shadow: 0px 12px 18px -6px #191919; */
+    /* box-shadow:0px 12px 18px -6px #191919; */
     transition: 0.2s ease-in-out all;
 }
 

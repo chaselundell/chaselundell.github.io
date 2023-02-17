@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var writerArray = [ "Father", "Husband", "Software Engineer", "Swimmer", "Biker"];
+    var writerArray = [ "Father", "Husband", "Programmer", "Swimmer", "Biker"];
     // type one char in the typwriter repeat until end of string
     function typeWriter(text, i, fnCallback) {
       if (i < (text.length)) {
