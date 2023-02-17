@@ -1,0 +1,92 @@
+.experience-section {
+    height: 130vh;
+    width: 100vw;
+    background-color: #2D4263;
+    /* background-image: linear-gradient(to bottom,#666666, #2D4263); */
+    color: #D8B56F;
+}
+
+.experience-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 15vh;
+}
+
+img {
+    margin-bottom: 5vh;
+}
+
+.church-logo-image {
+    aspect-ratio: .5;
+    width: 150px;
+}
+
+.mtc-logo-image {
+    aspect-ratio: 1.5;
+    width: 450px;
+    padding-top: 20px;
+    border-radius: 2%;
+}
+
+.experience {
+    background-color: rgba(25, 25, 25, 0);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    /* -webkit-box-shadow: 0px 12px 18px -6px #191919; */
+    /* box-shadow:0px 12px 18px -6px #191919; */
+    transition: 0.2s ease-in-out all;
+    text-align: center;
+}
+
+.experience-content {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 22px;
+    padding-bottom: 14px;
+}
+
+.custom-shape-divider-top-1676666872 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: #2D4263;
+}
+
+.custom-shape-divider-top-1676666872 svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 138px;
+}
+
+.custom-shape-divider-top-1676666872 .shape-fill {
+    fill: #666666;
+}
+
+@media only screen and (max-width: 1025px){
+    .experience-content {
+        font-size: 18px;
+    }
+
+    .mtc-logo-image {
+        width: 250px;
+    }
+
+    .church-logo-image {
+        width: 83px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .experience-section {
+    height: 170vh;
+    }
+}

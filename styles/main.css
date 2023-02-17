@@ -36,27 +36,3 @@ tan
     border-radius: 10px;
     background: linear-gradient(#191919, #C84B31, #191919);
   }
-
-
-
-/* Wavy divider */
-
-.custom-shape-divider-top-1676495962 {
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    background-color: #2D4263;
-}
-
-.custom-shape-divider-top-1676495962 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 124px;
-}
-
-.custom-shape-divider-top-1676495962 .shape-fill {
-    fill: #191919;
-}

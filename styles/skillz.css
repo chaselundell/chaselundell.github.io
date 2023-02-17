@@ -38,11 +38,33 @@ h2 {
 .skill-content {
     padding-left: 4vw;
     padding-right: 4vw;
-    font-size: 1.3rem;
+    font-size: 22px;
 }
 
 .skill:hover, .skill:active {
     transform: scale(1.05);
+}
+
+/* Wavy divider */
+
+.custom-shape-divider-top-1676495962 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #2D4263;
+}
+
+.custom-shape-divider-top-1676495962 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 124px;
+}
+
+.custom-shape-divider-top-1676495962 .shape-fill {
+    fill: #191919;
 }
 
 @media only screen and (max-width: 1025px){
@@ -51,5 +73,8 @@ h2 {
     }
     .my-skillz-section {
         height: 250vh;
+    }
+    .skill-content {
+        font-size: 18px;
     }
  }
