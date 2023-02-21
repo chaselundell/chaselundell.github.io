@@ -1,0 +1,47 @@
+.content {
+    width: 100%;
+}
+
+.game, .controls {
+    width:50%;
+}
+
+
+.game {
+    float:left;
+}
+
+.controls {
+    float:right;
+}
+
+.menuButton, .startLocBtn, .finishLocBtn {
+    margin-top:20px;
+    background-color: 	#FF8C00;
+    border-color: #FF4500;
+    font-size: 40px;
+    border-width: thick;
+    border-style: ridge;
+}
+
+.startLocBtn,.finishLocBtn {
+    background-color: #32CD32;
+    border-color: #228B22;
+    margin-top: 40px;
+}
+
+.finishLocBtn {
+    background-color: 	#DC143C;
+    border-color: #B22222;
+}
+
+.info, .devCredits {
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.dropdown {
+    display: block;
+    margin-top: 25px;
+    margin-left: 15px;
+}

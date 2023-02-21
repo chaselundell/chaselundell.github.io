@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+    <meta charset = "UTF-8">
+    <title>Maze Game</title>
+    <link rel="stylesheet" type="text/css" href="maze-game.css">
+</head>
+<body>
+    <div class="content">
+        <div class="game">
+            <canvas id = "id-canvas"
+                width = "500" height = "500"
+                style = "width: 500px; height: 500px;">
+            </canvas>
+        </div>
+        <div class="controls">
+            <button class="menuButton" onclick="MyGame.main.newGame()">New Game</button>
+            <select class="dropdown" id="mazeSizeDropdown">
+                <option value="5">5 x 5</option>
+                <option value="10">10 x 10</option>
+                <option value="15" selected="selected">15 x 15</option>
+                <option value="20">20 x 20</option>
+            </select>
+            <div class="info" id="highScores">
+                <ol id="highScore">No High Scores</ol>
+            </div>
+            <div class="info" id="currScore">Current Score: 0</div>
+            <div class="info" id="time">Time: 0</div>
+            <div class="devCredits">Developed by: Chase Lundell</div>
+
+            <button class="startLocBtn" onclick="MyGame.main.chooseStart()">Choose Start</button>
+            <button class="finishLocBtn" onclick="MyGame.main.chooseFinish()">Choose Finish</button>
+        </div>
+    </div>
+
+    <script>
+        let MyGame = {
+            objects: {},
+            render: {},
+            input: {}
+        };
+    </script>
+    <script src = "scripts/objects/Cell.js"></script>
+    <script src = "scripts/objects/Maze.js"></script>
+    <script src = "scripts/render/core.js"></script>
+    <script src = "scripts/render/maze.js"></script>
+    <script src = "scripts/render/gameOver.js"></script>
+    <script src = "scripts/render/point.js"></script>
+    <script src = "scripts/render/player.js"></script>
+    <script src = "scripts/player.js"></script>
+    <script src = "scripts/input-keyboard.js"></script>
+    <script src = "scripts/input-mouse.js"></script>
+    <script src = "scripts/maze-game.js"></script>
+</body>
+</html>
