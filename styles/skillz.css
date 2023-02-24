@@ -7,7 +7,7 @@ h2 {
 }
 
 .my-skillz-section {
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
     /* background-color: #2D4263; */
     background-image: linear-gradient(to bottom,#2D4263, #666666);
@@ -18,22 +18,63 @@ h2 {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    height: 100vh;
     gap: 3vh;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 10vh;
+    grid-template-areas:
+        "head   head   head   head"
+        "skill1 image  image  skill2"
+        "skill3 image  image  skill4"
+        "nada1   skill5 skill6 nada2"
+}
+.skill-image {
+    grid-area: image;
+    text-align: center;
+}
+.skill-image>img {
+    object-fit: cover;
+    width: 30vw;
 }
 
-.skill {
-    background-color: rgba(25, 25, 25, 0);
-    border-radius: 10px 10px 10px 10px;
+.skill1, .skill2, .skill3, .skill4, .skill5, .skill6, .skill-head{
     overflow: hidden;
     height: 35vh;
-    /* -webkit-box-shadow: 0px 12px 18px -6px #191919; */
-    /* box-shadow:0px 12px 18px -6px #191919; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     transition: 0.2s ease-in-out all;
 }
+/* background-color: rgba(25, 25, 25, 0); */
+/* border-radius: 10px 10px 10px 10px; */
+/* -webkit-box-shadow: 0px 12px 18px -6px #191919; */
+/* box-shadow:0px 12px 18px -6px #191919; */
+
+.skill-head {
+    grid-area: head;
+}
+.skill1 {
+    grid-area: skill1;
+}
+.skill2 {
+    grid-area: skill2;
+}
+.skill3 {
+    grid-area: skill3;
+}
+.skill4 {
+    grid-area: skill4;
+}
+.skill5 {
+    grid-area: skill5;
+}
+.skill6 {
+    grid-area: skill6;
+}
+
 
 .skill-content {
     padding-left: 4vw;
@@ -69,12 +110,25 @@ h2 {
 
 @media only screen and (max-width: 1025px){
     .my-skillz-grid {
-       grid-template-columns: 1fr;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+       grid-template-areas:
+           "head   head"
+           "image  image"
+           "skill1 skill2"
+           "skill3 skill4"
+           "skill5 skill6"
+    }
+    h2 {
+        font-size: 1.5rem;
     }
     .my-skillz-section {
-        height: 250vh;
+        height: 190vh;
     }
     .skill-content {
         font-size: 18px;
+    }
+    .skill-image>img {
+        width: 35vw;
     }
  }

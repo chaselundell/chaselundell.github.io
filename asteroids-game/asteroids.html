@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+    <meta charset = "UTF-8">
+    <title>Planetoids</title>
+    <link rel="stylesheet" type="text/css" href="asteroids-main.css">
+</head>
+<body onload = "initialize()">
+    <div class="game">
+        <canvas id = "id-canvas">
+        </canvas>
+    </div>
+
+    <script>
+        let MyGame = {
+            objects: {},
+            input: {},
+            menu: {},
+            render: {},
+            sounds: {}
+        };
+    </script>
+    <script src = "scripts/objects/AudioPlayer.js"></script>
+    <script src = "scripts/objects/SpaceObject.js"></script>
+    <script src = "scripts/objects/Ship.js"></script>
+    <script src = "scripts/objects/PlayerShip.js"></script>
+    <script src = "scripts/objects/Saucer.js"></script>
+    <script src = "scripts/objects/MenuBtn.js"></script>
+    <script src = "scripts/objects/Missile.js"></script>
+    <script src = "scripts/objects/Asteroid.js"></script>
+    <script src = "scripts/objects/Random.js"></script>
+    <script src = "scripts/render/particle-system.js"></script>
+    <script src = "scripts/objects/particle-system.js"></script>
+    <script src = "scripts/objects/ParticleSystemManager.js"></script>
+    <script src = "scripts/render/graphics.js"></script>
+    <script src = "scripts/render/menu.js"></script>
+    <script src = "scripts/render/player.js"></script>
+    <script src = "scripts/input-keyboard.js"></script>
+    <script src = "scripts/input-mouse.js"></script>
+    <script src = "scripts/menu/menu.js"></script>
+    <script src = "scripts/asteroids-game.js"></script>
+</body>
+</html>
