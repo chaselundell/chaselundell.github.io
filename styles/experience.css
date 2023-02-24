@@ -42,11 +42,21 @@ img {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    content: '\2014';
+    padding-right: 10px;
+}
+
 .experience-content {
     padding-left: 4vw;
     padding-right: 4vw;
     font-size: 22px;
     padding-bottom: 14px;
+    text-align: left;
 }
 
 .custom-shape-divider-top-1676666872 {
