@@ -132,3 +132,9 @@ h2 {
         width: 35vw;
     }
  }
+
+ @media only screen and (min-width: 1425px){
+    .skill-image>img {
+        width: 30vw;
+    }
+ }
