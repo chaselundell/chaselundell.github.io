@@ -13,7 +13,7 @@ MyGame.main = (function(objects, renderer, graphics, input) {
     const cellHeight = graphics.canvas.height/numCells;
     const BORDER_WIDTH = 0.5;
 
-    const PLAYER_IMAGE = "images/Donkey_Kong_Thumbs_Up.png";
+    const PLAYER_IMAGE = "images/child.png";
 
     const START_FILL_COLOR = '#39ff14';
     const BREAD_CRUMB_FILL_COLOR = '#C49102'
@@ -27,7 +27,7 @@ MyGame.main = (function(objects, renderer, graphics, input) {
 
     let myKeyboard = input.Keyboard();
     let myMouse = input.Mouse();
-    let time, score, trackedSeconds = 0;
+    let time, score, trackedSeconds, moves = 1;
     let choosingStart, choosingFinish, showBreadCrumbs, showShortestPath, showHint = false;
     let player, maze, breadCrumbs, hint = null;
     let gameFinished = true;
@@ -37,6 +37,7 @@ MyGame.main = (function(objects, renderer, graphics, input) {
         player = Player({x: 0,y: 0}, PLAYER_IMAGE);
         time = 0;
         score = 0;
+        moves = 1;
         trackedSeconds = 0;
         gameFinished = true;
         maze = Maze(numCells, START_FILL_COLOR, FINISH_FILL_COLOR, SHORTEST_PATH_FILL_COLOR);
@@ -76,6 +77,25 @@ MyGame.main = (function(objects, renderer, graphics, input) {
                 time += 1;
                 trackedSeconds = 0;
             }
+        }
+        let interval = 8;
+        if(moves%interval == 0) {
+            let imageSource = 'images/Jesus.jpeg';
+            if(moves/interval == 1) {
+                imageSource = 'images/atonement.jpeg';
+            }else if(moves/interval == 2) {
+                imageSource = 'images/atonement.jpeg';
+            }else if(moves/interval == 3) {
+                imageSource = 'images/baptism.webp';
+            }else if(moves/interval == 4) {
+                imageSource = 'images/holy-ghost.png';
+            }else if(moves/interval == 5) {
+                imageSource = 'images/sacrament.jpg';
+            }else if(moves/interval == 6) {
+                imageSource = 'images/temple.jpeg';
+            }
+            moves += 1;
+            document.getElementById("instructionalImage").src= imageSource;
         }
         if(!gameFinished) timer.innerHTML = "Time: " + time;
         if(!gameFinished) currScore.innerHTML = "Current Score: " + score;
@@ -165,6 +185,7 @@ MyGame.main = (function(objects, renderer, graphics, input) {
         breadCrumbs = [{x:x, y:y, fillColor: BREAD_CRUMB_FILL_COLOR}]
         player.setPosition({x: start.x, y: start.y});
         score = 0;
+        moves = 1;
         time = 0;
     }
 
@@ -192,6 +213,7 @@ MyGame.main = (function(objects, renderer, graphics, input) {
     }
 
     function postMoveUpdate() {
+        moves += 1;
         let pX = player.getPosition().x;
         let pY = player.getPosition().y;
         calculateHint();

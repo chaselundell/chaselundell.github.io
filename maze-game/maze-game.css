@@ -2,8 +2,8 @@
     width: 100%;
 }
 
-.game, .controls {
-    width:50%;
+.game, .controls .instructional-image {
+    width:33%;
 }
 
 
@@ -13,6 +13,7 @@
 
 .controls {
     float:right;
+    padding-right:50px;
 }
 
 .menuButton, .startLocBtn, .finishLocBtn {
