@@ -1,0 +1,45 @@
+.school-section {
+    height: 150vh;
+    width: 100vw;
+    background-color: #191919;
+    /* background-image: linear-gradient(to bottom,#666666, #2D4263); */
+    color: #D8B56F;
+}
+
+.custom-shape-divider-top-1707776507 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: #2D4263;
+}
+
+.custom-shape-divider-top-1707776507 svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 138px;
+}
+
+.custom-shape-divider-top-1707776507 .shape-fill {
+    fill: #191919;
+}
+
+.byu-logo-image {
+    width: 35vw;
+}
+
+.usu-logo-image {
+    width: 35vw;
+}
+
+.school-content {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 22px;
+    padding-bottom: 14px;
+    text-align: left;
+}
