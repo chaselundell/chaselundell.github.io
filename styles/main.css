@@ -36,3 +36,91 @@ tan
     border-radius: 10px;
     background: linear-gradient(#191919, #C84B31, #191919);
   }
+  #main-nav {
+    position: fixed; /* Keeps the nav bar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #191919; /* Dark grey background */
+    padding: 15px 0; /* Vertical padding */
+    text-align: center; /* Center the links */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-bottom: 1px solid #2D4263; /* Subtle border using dark blue */
+}
+
+#main-nav ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Allows centering the list */
+}
+
+#main-nav li {
+    display: inline-block; /* Arrange links horizontally */
+    margin: 0 20px; /* Space between links */
+}
+
+#main-nav a {
+    color: #ECDBBA; /* Tan color for links */
+    text-decoration: none; /* Remove underline */
+    font-family: tahoma, sans-serif; /* Match existing font */
+    font-size: 1rem; /* Adjust size as needed */
+    font-weight: 500; /* Match hero font weight */
+    text-transform: uppercase; /* Match hero style */
+    letter-spacing: 0.1em; /* Add some spacing */
+    padding: 5px 0; /* Padding for easier clicking */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+    position: relative; /* Needed for the underline effect */
+    display: inline-block;
+}
+
+#main-nav a:hover {
+    color: #C84B31; /* Orange color on hover */
+}
+
+/* Optional: Add subtle underline effect on hover */
+#main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px; /* Position the line below the text */
+    left: 0;
+    background-color: #C84B31; /* Orange underline */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#main-nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* === RESPONSIVE ADJUSTMENTS FOR NAV === */
+@media only screen and (max-width: 768px) {
+    #main-nav {
+        padding: 10px 0;
+    }
+    #main-nav li {
+        margin: 0 10px; /* Reduce spacing on smaller screens */
+    }
+    #main-nav a {
+        font-size: 0.9rem; /* Slightly smaller font */
+    }
+     html {
+         /* Adjust padding for smaller nav height */
+        scroll-padding-top: 50px;
+     }
+}
+
+ @media only screen and (max-width: 480px) {
+     #main-nav li {
+        margin: 0 5px; /* Even less spacing */
+    }
+     #main-nav a {
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+    }
+ }

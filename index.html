@@ -13,7 +13,15 @@
     <link rel="icon" href="assets/Dalle-icon-programmer.png"/>
 </head>
 <body>
-    <section class="hero">
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#school">Education</a></li>
+            </ul>
+    </nav>
+    <section class="hero" id="hero">
         <h1 class="me-snippets">
             <span class="my-name">Chase Lundell</span>
             <span class="message">
@@ -27,7 +35,7 @@
             <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
         </svg>
     </div>
-    <section class="my-skillz-section">
+    <section class="my-skillz-section" id="skills">
         <div class="my-skillz-grid">
             <div class="skill-head">
                 <h2>My Skills</h2>
@@ -67,18 +75,18 @@
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
     </div>
-    <section class="experience-section">
+    <section class="experience-section" id="experience">
         <div class="experience-grid">
             <div class="experience">
                 <img src="assets/church-logo.webp" class="church-logo-image"/>
                 <!-- <h2>The Church of Jesus Christ</h2>
                 <h2>of Latter Day Saints</h2> -->
                 <!-- <ul> -->
-                    <div class="experience-content">Led migration of build pipelines from Anthill to Azure dev ops.</div>
-                    <div class="experience-content">Converted an entire app from SQL to XML.</div>
-                    <div class="experience-content">Migrated 3 applications to Oath on OKTA.</div>
-                    <div class="experience-content">Integrated the dynamic CMS data into client side components and created custom templates.</div>
-                    <div class="experience-content">Created a workflow for Public Affairs representatives to create approved email addresses by hooking into a church-owned api.</div>
+                    <div class="experience-content">Led development for global Newsroom/Public Affairs platforms, launching consolidated sites in Spanish, Africa, and Caribbean regions.</div>
+                    <div class="experience-content">Migrated 24+ repositories from Bitbucket to GitHub and transitioned CI/CD pipelines from Anthill to Azure DevOps.</div>
+                    <div class="experience-content">Spearheaded OAuth migration for three applications using OKTA, enhancing authentication security.</div>
+                    <div class="experience-content">Integrated dynamic CMS content into client-side components and built custom templates for editorial teams.</div>
+                    <div class="experience-content">Developed secure workflows for Public Affairs reps to generate approved email addresses via internal APIs.</div>
                 <!-- </ul> -->
             </div>
             <div class="experience">
@@ -98,35 +106,63 @@
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
     </div>
-    <section class="school-section">
-        <div class="experience-grid">
-            <div class="experience">
+    <section class="school-section" id="school">
+        <div class="school-grid">
+            <div class="school">
+                <div class="school-content-title">Achieved a Bachelors Degree in Computer Engineering</div>
                 <img src="assets/byu.png" class="byu-logo-image"/>
                 <!-- <h2>The Church of Jesus Christ</h2>
                 <h2>of Latter Day Saints</h2> -->
                 <!-- <ul> -->
-                    <div class="school-content">Received a Bachelors in Computer Engineering with a minor in Computer Science.</div>
-                    <div class="school-content">Notable projects include:</div>
-                    <div class="school-content">Robot Soccer</div>
+                    <div class="school-content-title">Notable projects:</div>
+                    <button class="school-content-title collapsible">Robot Soccer</button>
+                    <div class="school-content-description">The Senior Project gave us the opportunity to program small robots using ROS to give them an algorithm that would help them coordinate and play soccer against another team.</div>
+                    <button class="school-content-title collapsible">Ticket to Ride on Android</button>
+                    <div class="school-content-description">Our OOP course gave us the opportunity to work as a group and create an android app where you could play ticket to ride.</div>
+                    <button class="school-content-title collapsible">Space Invaders on VGA display</button>
+                    <div class="school-content-description">We used C to create a program that was placed on a microcontroller that was able to play the old school space invaders game where you have a tank with bunkers protecting you from the invading aliens. We also made it so you could connect NES controllers to control the game.</div>
                 <!-- </ul> -->
             </div>
-            <div class="experience">
+            <div class="school">
+                <div class="school-content-title">Achieved a Masters Degree in Computer Science</div>
                 <img src="assets/utah-state.png" class="usu-logo-image"/>
                 <!-- <h2>Missionary Training Center</h2> -->
                 <!-- <ul> -->
-                    <div class="school-content">Achieved a Masters degree in Computer Science.</div>
-                    <div class="school-content">Classes Taken:</div>
-                    <div class="school-content">Computer Security 2</div>
-                    <div class="school-content">Independent Study of Database Systems</div>
-                    <div class="school-content">Distributed Systems 2</div>
-                    <div class="school-content">Object Oriented Software Development</div>
-                    <div class="school-content">Data Visualization</div>
-                    <div class="school-content">Game Development</div>
-                    <div class="school-content">Multi Agent Systems</div>
-                    <div class="school-content">Fault Tolerant Software</div>
-                    <div class="school-content">Intelligent Systems</div>
-                    <div class="school-content">Parallel Programming</div>
-                <!-- </ul> -->
+                <!-- <div class="school-content">Classes Taken:</div>
+                <div class="school-content">Computer Security 2</div>
+                <div class="school-content">Independent Study of Database Systems</div>
+                <div class="school-content">Distributed Systems 2</div>
+                <div class="school-content">Object Oriented Software Development</div>
+                <div class="school-content">Data Visualization</div>
+                <div class="school-content">Game Development</div>
+                <div class="school-content">Multi Agent Systems</div>
+                <div class="school-content">Fault Tolerant Software</div>
+                <div class="school-content">Intelligent Systems</div>
+                <div class="school-content">Parallel Programming</div> -->
+                <div class="school-content-title">Notable projects:</div>
+                <button class="school-content-title collapsible">Recipe Tracker Enhancements</button>
+                <div class="school-content-description">I had previously created a recipe tracking application for my wife that had a frontend and backend using Java for android, javascript for the webapp and firebase for the database. For my OOP software development class I chose to enhance this application by implementing the template method to create a defined way to introduce new authentication processes and implemented it with both google and pinterest. I also utilized the adapter pattern to future proof the database layer by throwing in an adapter layer in case I wanted to switch to a different database someday.</div>
+                <button class="school-content-title collapsible">LEGO Data Visualization</button>
+                <div class="school-content-description">For a class on data visualization I worked with another student on a project on LEGOs that showcased the history of lego sets over the past 30 years. Here is a link to the project 
+                    <div class="school-content link-with-icons">
+                        <img src="https://travisjayfloyd.github.io/Final/data/lego_head_glasses.png" alt="" class="link-icon"> 
+                        <a class="school-link" href="https://travisjayfloyd.github.io/Final/FinalProject.html">Lego Sets 1971 to 2015</a> 
+                        <img src="https://travisjayfloyd.github.io/Final/data/lego_head_smiley.png" alt="" class="link-icon"> 
+                    </div>
+                    </div>
+                <button class="school-content-title collapsible">Disease Surveillance</button>
+                <div class="school-content-description">I took a class called distributed systems where we used AWS to run a program on a bunch of EC2 instances. We had a script that would start each one and do a simulation of disease outbreaks based on a preset configuration. There were 3 unique programs set up on the EC2 instances. One would compile information about each of the outbreaks and forward them on to another that would sort the results and report them to the final program that would gather the ‘reports’ and determine actions to take for their specific disease. They would each communicate to each other to make sure the system as a whole was up to date using a pub sub architecture(ZeroMQ).</div>
+                <button class="school-content-title collapsible">Distributed Calculation of String Pairs</button>
+                <div class="school-content-description">In my distributed systems class we created a system that could calculate edit distances of a huge list string pairs. This was accomplished using Amazon EC2 instances and S3 buckets. There would be a 'manager' elected amongst the EC2 instances, then the rest would be assigned tasks, moving their tasks into the S3 buckets until all tasks were done and then communicated to the manager that the work was done. The manager could then safely shut everything down.</div>
+                <button class="school-content-title collapsible">Game Development Course</button>
+                <div class="school-content-description">I took a game development course that was to be all done in Javascript. We programmed games like Snake, a custom Maze running game, Asteroids, and Frogger. Here's a link to my <a href="https://chaselundell.github.io/maze-game/maze-game.html">maze game</a>.</div>
+                <button class="school-content-title collapsible">Fault Tolerant Software</button>
+                <div class="school-content-description">
+                    <p>For a security course we had to write a program that could withstand being killed every second (or less) and still be able to count to 100 (in 100 seconds) and save the results. To accomplish this IO used a UDP multicast system to communicate between a bunch of nodes about what the current status was and keep the program running even if parts of the system were killed.</p>
+                    <!-- <p>We had a similar assignment where we had to program a system where a man in the middle would corrupt bits and drop messages between two communicating clients.</p> -->
+                    <p>Our final assignment for that course was to create a program that would save chunks of a file at a time, successfully, even if some chunks became corrupted as the file is saving by a simulated corruption system. This was accomplished by saving it 3 times and having the threads to a vote as you read it back byte by byte to decide if it was correctly saved.</p>
+                </div>
+            <!-- </ul> -->
             </div>
         </div>
     </section>

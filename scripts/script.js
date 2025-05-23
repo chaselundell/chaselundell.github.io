@@ -36,3 +36,41 @@ document.addEventListener('DOMContentLoaded',function(event){
     // start the text animation
     StartTextAnimation(0);
   });
+
+// === ADD SMOOTH SCROLL FOR NAV LINKS (Optional) ===
+const navLinks = document.querySelectorAll('#main-nav a[href^="#"]');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor jump
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            // Calculate scroll position, accounting for fixed nav height
+            const navHeight = document.getElementById('main-nav').offsetHeight;
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+// === END SMOOTH SCROLL CODE ===
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight != "0px" && content.style.maxHeight != ""){
+      content.style.maxHeight = "0px";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
