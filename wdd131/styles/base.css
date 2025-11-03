@@ -71,8 +71,8 @@ main.two-column h1.page-title {
   grid-row: 2;
 }
 
-/* Uganda left column row3 */
-.uganda {
+/* Utah left column row3 */
+.utah {
   grid-column: 1;
   grid-row: 3;
 }
@@ -177,7 +177,7 @@ footer {
   }
 
   .aboutme,
-  .uganda,
+  .utah,
   .resources {
     grid-column: auto;
     grid-row: auto;
