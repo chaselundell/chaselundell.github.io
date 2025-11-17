@@ -1,0 +1,114 @@
+body {
+    margin: 0 auto;
+    height: auto;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
+}
+header {
+    background-color: rgb(29, 77, 114);    
+}
+header p {
+    color: white;
+    float: left;
+    padding: 0px 0px 0px 15px;
+    
+}
+
+button {
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+#menu-button::before {
+    content: "☰";
+    font-size: 1.5rem;
+}
+
+#menu-button.open::before {
+    content: "❌";
+    font-size: 1.5rem;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    
+}
+
+.navigation {
+    display: none;
+    list-style: none;    
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+}
+
+.navigation.open {
+    display: grid;
+}
+.navigation a {        
+  color: white;
+  text-decoration: none;
+  padding: .5rem 1.5rem;
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #f4a261; 
+  transform: translateY(-2px);
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background-color: #f4a261;
+  transition: width 0.3s ease;
+}
+
+.navigation a:hover::after,
+.navigation a:focus::after {
+  width: 100%;
+}
+
+.open a {
+	display: block;
+}
+main h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.gallery {
+    display: grid;
+    margin: 0 auto;
+    grid-template-Columns: repeat(auto-fit, minmax(260px, 1fr));
+    max-width: calc(3 * 260px + 2 * 5px); 
+    justify-content: center;
+    gap: 2px;
+}
+.gallery img {    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+.gallery figcaption {
+    text-align: center;
+}
+   
+footer {
+    display: none;
+}
