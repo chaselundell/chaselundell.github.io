@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Chase Lundell Temple Picture Album">
+    <meta name="author" content="Chase Lundell">
+    <link rel="stylesheet" href="styles/temple.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script> 
+    <title>WDD 131 Temple Picture Album</title>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <p>Temple Album</p>
+            <button type="button" id="menu-button" aria-label="small-menu"></button>
+            <ul class="navigation"> 
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Home</h1>
+        <div class="gallery">       
+            <figure>
+                <img src="images/rome-temple-sm.jpg" alt="Rome Italy Temple">
+                <figcaption>Rome Temple</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/mexico-city-temple-sm.jpg" alt="Mexico City Mexico Temple">
+                <figcaption>Mexico City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/calgary-alberta-temple-sm.jpg" alt="Calgary Alberta Canada Temple">
+                <figcaption>Calgary Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cardston-alberta-temple-sm.jpg" alt="Cardston Alberta Canada Temple">
+                <figcaption>Cardston Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple1.jpg" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple2.jpg" alt="Nigeria Aba Temple" loading="lazy">
+                <figcaption>Nigeria Aba Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple3.jpg" alt="Ghana Kumasi Temple" loading="lazy">
+                <figcaption>Ghana Kumasi Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple4.jpg" alt="South Africa Johannesburg Temple" loading="lazy">
+                <figcaption>South Africa Johannesburg Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temple5.jpg" alt="Congo Kinshasa Temple" loading="lazy">
+                <figcaption>Congo Kinshasa Temple</figcaption>
+            </figure>
+        </div>
+        
+    </main>
+    <footer>
+        <p id="footer-title">©️<span id="currentyear"></span> | Chase Lundell - Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
